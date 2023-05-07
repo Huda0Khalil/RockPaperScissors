@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive, serif;
+    background-color: #DEF5DA;
+    overflow: hidden;
+
+}
+
+.page{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.page .back{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.page .back i{
+    color: #00f00F;
+
+}
+.page .container{
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ff69b4;
+    height: 100%;
+    width: 900px;
+    box-shadow: 0 0 5px 10px #FFB5DA;
+}
+@media (max-width: 675px) {
+    .page .container .data{
+        flex-direction: column;
+        text-align: center;  
+    }
+    .page .back{
+        display: none;
+    }
+    .page .container{
+        margin-top: 0;
+    }
+    page .attemptBox {
+        flex-wrap: nowrap;
+      }
+    .page .attemptBox  > .box div, .choice{
+        width: calc((100% - 40px) / 3);
+      }
+}
+.page .container .data{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid ;
+    color: #0C74E8;
+
+
+}
+.page .container .data span{
+    color: red;
+}
+.page .attemptBox {
+    padding: 20px 5px 35px 10px;
+    border: 1px solid salmon;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+   /* flex-direction: column;*/
+
+    
+}
+.page .attemptBox > p{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    color: #420DFF;
+}
+.page .attemptBox  > .box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    line-height: 1;
+}
+.page .attemptBox  > .box div, .choice{
+    width: 200px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #420DFF;
+    box-shadow: 0 0 10px 4px;
+    border: 2px solid;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+
+.page .attemptBox  > .box div{
+    cursor: pointer;
+
+}
+.page .attemptBox  > .box div:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.page .attemptBox div i,.choice i{
+    font-size: 85px;
+    color: #00ffff;
+    
+}
+.resultBox{
+   font-size: 21px;
+    color: #1c0474;
+    font-weight: 900;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+
+}
+.complate{
+    color: #1C5C5C;
+    margin-left: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.Result{
+    color: #1c0474;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5;
+}
